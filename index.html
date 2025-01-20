@@ -166,7 +166,7 @@
 
     <section id="video" tabindex="0" role="region" aria-labelledby="video-titulo">
       <h2 id="video-titulo" tabindex="0">Presentación</h2>
-      <video controls aria-label="Video de presentación personal de Kevin González" tabindex="0" autoplay>
+      <video controls aria-label="Video de presentación personal de Kevin González" tabindex="0">
         <source src="assets/video.mp4" type="video/mp4">
         <track src="assets/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
         Tu navegador no soporta videos HTML5.
@@ -183,20 +183,11 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const nombreElement = document.getElementById("nombre");
-      if (nombreElement) {
-        nombreElement.setAttribute("tabindex", "0");
-        nombreElement.focus();
-      }
-    });
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
       const video = document.querySelector("video");
 
+      // Manejar eventos de focus y blur para el video
       video.addEventListener("focus", () => {
-        video.muted = false;
+        video.muted = false; // Si se requiere que esté sin sonido, elimina esta línea
         if (video.paused) {
           video.play();
         }
@@ -207,7 +198,14 @@
           video.pause();
         }
       });
+
+      // Opcional: Detectar cuando el lector de pantalla lee el título del video
+      const videoTitle = document.querySelector("#video-titulo");
+      videoTitle.addEventListener("focus", () => {
+        video.focus(); // Esto asegura que el video se reproduzca solo cuando el lector interactúe
+      });
     });
+
   </script>
 
   <script>
