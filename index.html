@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header tabindex="0" role="banner">
     <h1 id="nombre" tabindex="0">Kevin González</h1>
     <img src="assets/shander.webp" alt="Foto de perfil de Kevin González" tabindex="0">
     <p id="profesion" tabindex="0">Ingeniero en Software</p>
@@ -164,12 +164,11 @@
       </ul>
     </section>
 
-
-
     <section id="video" tabindex="0" role="region" aria-labelledby="video-titulo">
       <h2 id="video-titulo" tabindex="0">Presentación</h2>
-      <video controls aria-label="Video de presentación" tabindex="0">
+      <video controls aria-label="Video de presentación personal de Kevin González" tabindex="0" autoplay>
         <source src="assets/video.mp4" type="video/mp4">
+        <track src="assets/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
         Tu navegador no soporta videos HTML5.
       </video>
     </section>
@@ -181,6 +180,35 @@
     <p tabindex="0">Teléfono: <a href="tel:+593997487935">+593 99 748 7935</a></p>
     <p tabindex="0">Dirección: La Vicentina, Quito</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nombreElement = document.getElementById("nombre");
+      if (nombreElement) {
+        nombreElement.setAttribute("tabindex", "0");
+        nombreElement.focus();
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const video = document.querySelector("video");
+
+      video.addEventListener("focus", () => {
+        video.muted = false;
+        if (video.paused) {
+          video.play();
+        }
+      });
+
+      video.addEventListener("blur", () => {
+        if (!video.paused) {
+          video.pause();
+        }
+      });
+    });
+  </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
