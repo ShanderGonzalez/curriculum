@@ -13,14 +13,14 @@ Este proyecto consiste en un currículum vitae diseñado con enfoque en **accesi
 
 ## Estructura del Proyecto
 
-Curriculum-Accesible/
-├── index.html         # Archivo principal del currículum vitae.
-├── index.css          # Hoja de estilos para el diseño y la accesibilidad.
-├── script.js          # Script para mejorar la interacción y navegación.
-├── assets/            # Carpeta de recursos como imágenes y videos.
-│   ├── shander.webp   # Imagen del perfil.
-│   └── video.mp4      # Video de presentación.
-└── README.md          # Documentación del proyecto.
+  Curriculum-Accesible/
+  ├── index.html         # Archivo principal del currículum vitae.
+  ├── index.css          # Hoja de estilos para el diseño y la accesibilidad.
+  ├── script.js          # Script para mejorar la interacción y navegación.
+  ├── assets/            # Carpeta de recursos como imágenes y videos.
+  │   ├── shander.webp   # Imagen del perfil.
+  │   └── video.mp4      # Video de presentación.
+  └── README.md          # Documentación del proyecto.
 
 
 
