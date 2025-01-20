@@ -213,13 +213,14 @@ table th {
   white-space: nowrap;
 }
 
-#referencias ul {
+/* Proyectos Section */
+#proyectos ul {
   list-style: none;
   padding: 0;
 }
 
-#referencias li {
-  margin-bottom: 1rem;
+#proyectos li {
+  margin-bottom: 1.5rem;
   padding: 1rem;
   background: #f9f9f9;
   border: 1px solid #ddd;
@@ -227,19 +228,31 @@ table th {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#referencias li strong {
-  font-size: 1.1rem;
+#proyectos li h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
   color: #1565c0;
 }
 
-#referencias li a {
-  color: #1e88e5;
-  text-decoration: none;
+#proyectos li p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #424242;
 }
 
-#referencias li a:hover {
-  text-decoration: underline;
+#proyectos li p strong {
+  font-weight: bold;
+  color: #1e88e5;
 }
+
+/* Estilo adicional para etiquetas como "Descripción:", "Tecnologías:", "Año:" */
+#proyectos li p span.label {
+  font-weight: bold;
+  color: #4caf50;
+  font-size: 1rem;
+}
+
+
 
 /* Video Section */
 video {
