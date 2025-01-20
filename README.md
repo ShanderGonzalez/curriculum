@@ -16,6 +16,7 @@ Este proyecto consiste en un currículum vitae diseñado con enfoque en **accesi
 Curriculum-Accesible/
 
 ├── index.html
+
 ├── index.css   
 ├── script.js  
 ├── assets/  
