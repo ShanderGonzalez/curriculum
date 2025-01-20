@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículum vitae con diseño responsive y accesible">
+  <title>Currículum Vitae</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="nombre" tabindex="0">Kevin González</h1>
+    <img src="assets/shander.webp" alt="Foto de perfil de Kevin González" tabindex="0">
+    <p id="profesion" tabindex="0">Ingeniero en Software</p>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="#sobre-mi" class="active">Sobre Mí</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#referencias">Referencias</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="sobre-mi" tabindex="0" role="region" aria-labelledby="sobre-mi-titulo">
+      <h2 id="sobre-mi-titulo" tabindex="0">Sobre Mí</h2>
+      <p tabindex="0">Soy una persona dedicada y responsable, siempre aprendiendo cosas nuevas que me ayuden a mejorar
+        en base a experiencia. Me gusta interactuar con personas. Soy amante al deporte y conocer diferentes lugares.
+      </p>
+    </section>
+
+    <section id="experiencia" tabindex="0" role="region" aria-labelledby="experiencia-titulo">
+      <h2 id="experiencia-titulo" tabindex="0">Experiencia</h2>
+      <table tabindex="0">
+        <caption tabindex="0">Historial de experiencia laboral</caption>
+        <thead>
+          <tr>
+            <th scope="col" tabindex="0">Posición</th>
+            <th scope="col" tabindex="0">Empresa</th>
+            <th scope="col" tabindex="0">Años</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td tabindex="0">Campo de entrenamiento militar</td>
+            <td tabindex="0">Curso Aitimar</td>
+            <td tabindex="0">2019-2020</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Desarrollador Móvil</td>
+            <td tabindex="0">Gaheos S.A.</td>
+            <td tabindex="0">2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="educacion" tabindex="0" role="region" aria-labelledby="educacion-titulo">
+      <h2 id="educacion-titulo" tabindex="0">Educación</h2>
+      <table tabindex="0">
+        <caption tabindex="0">Historial educativo</caption>
+        <thead>
+          <tr>
+            <th scope="col" tabindex="0">Grado</th>
+            <th scope="col" tabindex="0">Institución</th>
+            <th scope="col" tabindex="0">Año</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td tabindex="0">Primaria</td>
+            <td tabindex="0">Academia Naval Capitán Leonardo Abad Astudillo</td>
+            <td tabindex="0">2008-2015</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Secundaria</td>
+            <td tabindex="0">Academia Naval Capitán Leonardo Abad Astudillo</td>
+            <td tabindex="0">2016-2019</td>
+          </tr>
+          <tr>
+            <td tabindex="0">Tercer Nivel - En proceso</td>
+            <td tabindex="0">Escuela Politécnica Nacional</td>
+            <td tabindex="0">2020-2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="idiomas" tabindex="0" role="region" aria-labelledby="idiomas-titulo">
+      <h2 id="idiomas-titulo" tabindex="0">Idiomas</h2>
+      <div class="progress-container">
+        <p class="progress-label" tabindex="0">Español - Nativo</p>
+        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress" style="width: 100%;" tabindex="0">100%</div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <p class="progress-label" tabindex="0">Inglés - Intermedio (B2)</p>
+        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress" style="width: 70%;" tabindex="0">70%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" tabindex="0" role="region" aria-labelledby="habilidades-titulo">
+      <h2 id="habilidades-titulo" tabindex="0">Habilidades</h2>
+      <div class="skill-container">
+        <p class="skill-label" tabindex="0">Programación en Java, JavaScript, Python, y Flutter</p>
+        <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="skill" style="width: 90%;" tabindex="0">90%</div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <p class="skill-label" tabindex="0">Diseño UX/UI</p>
+        <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="skill" style="width: 80%;" tabindex="0">80%</div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <p class="skill-label" tabindex="0">Trabajo en equipo</p>
+        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="skill" style="width: 85%;" tabindex="0">85%</div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <p class="skill-label" tabindex="0">Resolución de problemas</p>
+        <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="skill" style="width: 75%;" tabindex="0">75%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="referencias" tabindex="0" role="region" aria-labelledby="referencias-titulo">
+      <h2 id="referencias-titulo" tabindex="0">Referencias</h2>
+      <ul>
+        <li tabindex="0">
+          <p><strong tabindex="0">Lcda. Betsy Edith Tomalá Roca</strong></p>
+          <p tabindex="0">Teléfono: <a href="tel:+593981098488">0981098488</a></p>
+          <p tabindex="0">Email: <a href="mailto:betsytr81@hotmail.com">betsytr81@hotmail.com</a></p>
+        </li>
+        <li tabindex="0">
+          <p><strong tabindex="0">Iván David De la A Quinde - Docente</strong></p>
+          <p tabindex="0">Teléfono: <a href="tel:+593996528650">0996528650</a></p>
+          <p tabindex="0">Email: <a href="mailto:ivandelaaquinde80@gmail.com">ivandelaaquinde80@gmail.com</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="video" tabindex="0" role="region" aria-labelledby="video-titulo">
+      <h2 id="video-titulo" tabindex="0">Presentación</h2>
+      <video controls aria-label="Video de presentación" tabindex="0">
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </section>
+  </main>
+
+  <footer id="contacto" tabindex="0" role="region" aria-labelledby="contacto-titulo">
+    <h2 id="contacto-titulo" tabindex="0">Contacto</h2>
+    <p tabindex="0">Email: <a href="mailto:kevin.gonzalez@epn.edu.ec">kevin.gonzalez@epn.edu.ec</a></p>
+    <p tabindex="0">Teléfono: <a href="tel:+593997487935">+593 99 748 7935</a></p>
+    <p tabindex="0">Dirección: La Vicentina, Quito</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("main section");
+      const menuLinks = document.querySelectorAll("nav ul li a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (scrollY >= sectionTop - 50) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        menuLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
